@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.udacity.stage2.popularmoviess2.activity.MovieActivity">
+        <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/sort_popularity"
+                android:title="MOST POPULAR"
+                android:checked="true"
+
+                />
+            <item
+                android:id="@+id/sort_rating"
+                android:title="HIGHEST RATED"
+                />
+            <item
+                android:id="@+id/favorite"
+                android:title="FAVORITE"
+                />
+        </group>
+
+
+    </menu>

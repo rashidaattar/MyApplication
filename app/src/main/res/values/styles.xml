@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <item name="android:colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="android:windowBackground">@color/windowbg</item>
+    </style>
+
+    <style name="myAlertTheme" parent="Base.AlertDialog.AppCompat.Light">
+        <item name="android:background">@color/primary</item>
+        <!--<item name="android:windowTitleStyle">@style/dialog_title_style</item>-->
+    </style>
+
+    <style name="dialog_title_style" parent="android:Widget.TextView">
+        <item name="android:background">@color/primary</item>
+
+    </style>
+
+</resources>

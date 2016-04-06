@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.udacity.stage2.popularmoviess2" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activity.SplashScreenActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MovieActivity"
+            android:label="@string/title_activity_movie" >
+        </activity>
+        <activity
+            android:name=".activity.MovieDetailActivity"
+            android:label="@string/title_activity_movie_detail"
+            android:parentActivityName=".activity.MovieActivity">
+        </activity>
+
+        <provider
+            android:authorities="com.udacity.stage2.popularmoviess2"
+            android:name="com.udacity.stage2.popularmoviess2.provider.MovieProvider"
+            android:exported="false"/>
+    </application>
+
+</manifest>
